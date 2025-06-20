@@ -1,0 +1,88 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #f9f7e8; /* soft yellow-white */
+  background: url('chrome2.png') no-repeat center center fixed;
+  background-size: cover;
+  text-shadow: 0 0 8px #fff9d2, 0 0 12px #f0e68c; /* gentle glowing text */
+}
+
+.overlay {
+  background-color: rgba(10, 5, 20, 0.75); /* darker, deep mystical purple/blue */
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  padding: 2rem;
+  box-shadow: 0 0 30px #f0e68c66 inset; /* subtle inner glow */
+}
+
+.container {
+  max-width: 600px;
+}
+
+h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  color: #f9f7e8;
+  text-shadow: 0 0 10px #f0e68c, 0 0 15px #fffacd;
+}
+
+.description {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+  color: #f9f7e8;
+  text-shadow: 0 0 6px #fffacd;
+}
+
+.download-btn, .nav-buttons a, button {
+  display: inline-block;
+  margin: 0.5rem;
+  padding: 0.8rem 1.2rem;
+  background: linear-gradient(135deg, #f0e68c, #fffacd);
+  color: #4b3b00; /* dark brown for contrast */
+  font-weight: 600;
+  text-decoration: none;
+  border-radius: 12px;
+  box-shadow: 0 0 15px #fffacd88;
+  transition: background 0.3s, box-shadow 0.3s;
+}
+
+.download-btn:hover, .nav-buttons a:hover, button:hover {
+  background: linear-gradient(135deg, #fffacd, #f0e68c);
+  box-shadow: 0 0 25px #fffacdcc;
+}
+
+form input, form textarea {
+  width: 100%;
+  margin: 0.5rem 0;
+  padding: 0.8rem;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  background-color: #29244d;
+  color: #f9f7e8;
+  box-shadow: 0 0 5px #f0e68c66 inset;
+  transition: box-shadow 0.3s;
+}
+
+form input:focus, form textarea:focus {
+  outline: none;
+  box-shadow: 0 0 12px #fffacd;
+}
+
+form textarea {
+  height: 120px;
+  resize: none;
+}
+
+button[type="submit"] {
+  cursor: pointer;
+  width: 100%;
+}
+
+.nav-buttons {
+  margin-top: 2rem;
+}
